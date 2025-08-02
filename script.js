@@ -58,8 +58,8 @@ function initSecurityGate() {
         const gateTitle = document.querySelector('.gate-title');
         const gateQuestion = document.querySelector('.gate-question');
         
-        gateTitle.innerHTML = 'Bienvenue mon amour! 💕';
-        gateQuestion.innerHTML = 'Prépare-toi pour une surprise spéciale...';
+        gateTitle.innerHTML = 'mar7ba ya 7abibti! 💕';
+        gateQuestion.innerHTML = '7adher rouhek lel moufej2a hhh...';
         
         // Hide input and button
         document.querySelector('.gate-input-container').style.display = 'none';
@@ -367,10 +367,10 @@ function showBirthdayMessage() {
         message.style.transform = 'translate(-50%, -50%) scale(0.8)';
         message.style.transition = 'all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
         message.innerHTML = `
-            <h3 style="font-size: 2rem; margin-bottom: 15px;">🎉 Surprise! 🎉</h3>
-            <p>I hope this little website brings a smile to your beautiful face!</p>
-            <p style="margin-top: 10px; font-style: italic;">With all my love 💕</p>
-            <button onclick="closeMessage(this.parentElement)" style="margin-top: 20px; padding: 10px 20px; background: white; color: #ff6b9d; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; transition: all 0.3s ease;">Close 💖</button>
+            <h3 style="font-size: 2rem; margin-bottom: 15px;">🎉 moufej2a! 🎉</h3>
+            <p>nchallah l site he4a yaamellik dhe7ka aala wejhek ya mezyenti!</p>
+            <p style="margin-top: 10px; font-style: italic;">b'kol 7obi 💕</p>
+            <button onclick="closeMessage(this.parentElement)" style="margin-top: 20px; padding: 10px 20px; background: white; color: #ff6b9d; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; transition: all 0.3s ease;">saker 💖</button>
         `;
         
         document.body.appendChild(message);
@@ -476,7 +476,7 @@ function addBirthdayMusicButton() {
     if (!heroSection) return;
     
     const musicButton = document.createElement('button');
-    musicButton.innerHTML = '🎵 Play Birthday Song';
+    musicButton.innerHTML = '🎵 a3mel ghnaya 3id milad';
     musicButton.style.cssText = `
         background: linear-gradient(135deg, #ff6b9d, #c44569);
         color: white;
@@ -504,9 +504,9 @@ function addBirthdayMusicButton() {
     musicButton.addEventListener('click', () => {
         // Create a fun birthday song using Web Audio API
         playBirthdaySong();
-        musicButton.textContent = '🎵 Playing...';
+        musicButton.textContent = '🎵 9a3da nel3ab...';
         setTimeout(() => {
-            musicButton.innerHTML = '🎵 Play Birthday Song';
+            musicButton.innerHTML = '🎵 a3mel ghnaya 3id milad';
         }, 5000);
     });
     
@@ -516,7 +516,7 @@ function addBirthdayMusicButton() {
 // Simple birthday song using Web Audio API
 function playBirthdaySong() {
     if (!window.AudioContext && !window.webkitAudioContext) {
-        alert('🎵 Happy Birthday to you! 🎵\n(Audio not supported in this browser)');
+        alert('🎵 3id miladek sa3id ya wiem! 🎵\n(l audio mech supported fil browser hedha)');
         return;
     }
     
